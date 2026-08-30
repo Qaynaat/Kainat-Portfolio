@@ -129,51 +129,37 @@ function App() {
 
 </nav>
 
+<div className="hero-content">
 
-      {/* HERO */}
-      <section id="home" className="hero">
+  <p className="hero-eyebrow">
+    SOFTWARE ENGINEERING STUDENT · DEVELOPER
+  </p>
 
-        <div className="hero-glow"></div>
+  <h1>
+    I build software
+    <span>with purpose.</span>
+  </h1>
 
-        <div className="hero-content">
-          <p className="eyebrow">
-            SOFTWARE ENGINEERING • CREATIVE DEVELOPMENT
-          </p>
+  <p className="hero-description">
+    I'm Kainat Aslam, a Software Engineering student focused on
+    building practical digital products that solve real problems.
+  </p>
 
-          <h1>
-            Kainat
-            <span>Aslam.</span>
-          </h1>
+  <div className="hero-actions">
 
-          <p className="role">
-            Software Engineering Student
-            <span>•</span>
-            Python Developer
-          </p>
+    <a href="#skillverse" className="hero-primary">
+      Explore SkillVerse
+      <span>↗</span>
+    </a>
 
-          <p className="hero-description">
-            I turn ideas into software and build practical solutions
-            around real-world problems.
-          </p>
+    <a href="#contact" className="hero-secondary">
+      Let's Connect
+      <span>↗</span>
+    </a>
 
-          <div className="hero-buttons">
-            <a href="#skillverse" className="primary-btn">
-              Explore SkillVerse <span>↗</span>
-            </a>
+  </div>
 
-            <a href="#about" className="secondary-btn">
-              Meet the Creator
-            </a>
-          </div>
-        </div>
-
-        <div className="scroll-indicator">
-          <span>SCROLL TO EXPLORE</span>
-          <div className="scroll-line"></div>
-        </div>
-
-      </section>
-
+</div>
 
       {/* SKILLVERSE */}
       <section id="skillverse" className="skillverse-section">

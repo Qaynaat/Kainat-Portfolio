@@ -779,14 +779,10 @@ footer {
 
 .skillverse-orbit {
   position: relative;
-
   width: 280px;
   height: 280px;
-
   margin: auto;
-
   display: grid;
-
   place-items: center;
 }
 
@@ -1638,4 +1634,327 @@ section {
     color: var(--accent);
   }
 
+}
+/* =====================================================
+   MISSION 12 — PROFESSIONAL VISUAL POLISH
+===================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #07070b;
+  color: #f5f5f7;
+}
+
+/* Better section spacing */
+
+section {
+  scroll-margin-top: 90px;
+}
+
+/* Consistent container width */
+
+.section-container,
+.section-inner,
+.container {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Better text readability */
+
+p {
+  line-height: 1.75;
+}
+
+/* Smooth cards */
+
+.card,
+.skill-card,
+.project-card,
+.journey-step {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Subtle hover effect */
+
+.card:hover,
+.skill-card:hover,
+.project-card:hover,
+.journey-step:hover {
+  transform: translateY(-4px);
+}
+
+/* Better buttons */
+
+button,
+.btn,
+.cta-button,
+a[class*="button"] {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover,
+.cta-button:hover,
+a[class*="button"]:hover {
+  transform: translateY(-2px);
+}
+
+/* Prevent accidental horizontal scrolling */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Better mobile spacing */
+
+@media (max-width: 700px) {
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  p {
+    line-height: 1.65;
+  }
+
+}
+
+/* =====================================================
+   MISSION 13 — HERO POLISH
+===================================================== */
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero-eyebrow {
+  margin-bottom: 22px;
+
+  font-size: 0.72rem;
+
+  letter-spacing: 2px;
+
+  color: var(--accent);
+
+  font-weight: 600;
+}
+
+.hero-description {
+  max-width: 650px;
+
+  margin-top: 28px;
+
+  color: var(--muted);
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 40px;
+}
+
+.hero-primary,
+.hero-secondary {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 20px;
+
+  border-radius: 8px;
+
+  font-size: 0.85rem;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.hero-primary {
+  background: var(--accent);
+
+  color: #07070b;
+}
+
+.hero-secondary {
+  border: 1px solid var(--border);
+
+  color: var(--text);
+}
+
+.hero-primary:hover,
+.hero-secondary:hover {
+  transform: translateY(-3px);
+}
+
+.hero-secondary:hover {
+  background: var(--surface);
+}
+
+@media (max-width: 700px) {
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.65rem;
+
+    letter-spacing: 1.5px;
+  }
+
+  .hero-description {
+    font-size: 0.92rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}
+/* =====================================================
+   MISSION 14 — DESKTOP + MOBILE OVERFLOW FIX
+===================================================== */
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent grid/flex children from forcing
+   the page wider than the viewport */
+
+.hero,
+.skillverse-section,
+.skillverse-main-card,
+.about-section,
+.contact-section,
+footer {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* SkillVerse orbit stays inside its container */
+
+.skillverse-orbit {
+  width: 280px;
+  max-width: 100%;
+  height: 280px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+/* Contact section must stay inside viewport */
+
+.contact-section {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Make text shrink instead of creating horizontal overflow */
+
+.hero h1,
+.section-heading h2,
+.about-section h2,
+.contact-section h2,
+.skillverse-info h3,
+.problem-section h3 {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* =====================================================
+   MOBILE OVERFLOW PROTECTION
+===================================================== */
+
+@media (max-width: 850px) {
+  .skillverse-main-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .skillverse-orbit {
+    width: 220px;
+    max-width: 100%;
+    height: 220px;
+  }
+
+  .orbit-ring {
+    max-width: 100%;
+  }
+
+  .orbit-ring-two {
+    max-width: 100%;
+  }
+
+  .problem-section {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero,
+  .skillverse-section,
+  .about-section,
+  .contact-section,
+  footer {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero h1,
+  .section-heading h2,
+  .about-section h2,
+  .contact-section h2 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
 }
