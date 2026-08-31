@@ -14,3 +14,15 @@ button,
 a {
   font: inherit;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #a45cff;
+  color: #ffffff;
+}
